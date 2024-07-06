@@ -87,9 +87,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    #the deploy action requires a checkout and it's messy to do a checkout in public first (gotta deal with deletes etc)
-    #so it's simpler to checkout in root first, then content in folder. Or easier just don't use the root in such a way
-    #that you can't have it still be in the root of the repo. Just checkout docs into the root! But you can do it:
+    #the deploy action requires a checkout. It's messy to do a checkout in public
+    #first (gotta deal with deletes etc, making zola force build, etc) so it's
+    #simpler to checkout in root first, then the content in folder. Or even easier
+    #just don't use --root in such a way that you can't have it still be in the root
+    #of the repo. Instead just checkout docs into the root! But you can do it:
     - uses: actions/checkout@master
     - uses: actions/checkout@master
       with:
