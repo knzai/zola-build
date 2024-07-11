@@ -1,5 +1,7 @@
 # Build (and/or deploy) a getzola/zola site
 
+## Deprecated for: https://github.com/zolacti/on
+
 ![Build Status](https://img.shields.io/github/actions/workflow/status/knzai/zola-build/test.yml)
 
 Builds [zola](https://github.com/getzola/zola) static site generator's site and pushes to gh-pages. If you want a deploy with non default settings an example is giving explicitely calling [JamesIves/github-pages-deploy-action]
